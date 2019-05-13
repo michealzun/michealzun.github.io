@@ -1,18 +1,4 @@
-/*    JavaScript 6th Edition
- *    Chapter 5
- *    Chapter case
-
- *    Photo gallery
- *    Variables and functions
- *    Author: 
- *    Date:   
-
- *    Filename: photos.js
- */
-
-"use strict"; // interpret document contents in JavaScript strict mode
-
-/* global variables */
+"use strict"; 
 var photoOrder = [1,2,3,4,5];
 var autoAdvance = setInterval(rightAdvance,5000);
 var figureCount = 3;
@@ -21,13 +7,12 @@ var favSelect = "fav1";
 var favlist=document.getElementById("favlist");
 
 function imgNodes () {
-    //html image tag i had : <img id="fav4" width="192" height="108" onclick="selectFavFour()" src="images/black.jpg" hidden="hidden"/>
     var imgOne = document.createElement("img");
     imgOne.id = "fav1";
     imgOne.style.width = "192px";
     imgOne.style.height = "108px";
     imgOne.addEventListener("click", selectFavOne, "false");
-    imgOne.src = "images/black.jpg";
+    imgOne.src = "../assets/black.jpg";
     imgOne.hidden = "hidden";
 
     var imgTwo = imgOne.cloneNode(true);
@@ -43,12 +28,12 @@ function imgNodes () {
     imgFour.addEventListener("click", selectFavFour, "false");
 
     var imgFive = imgOne.cloneNode(true);
-    imgTFive.id = "fav5";
+    imgFive.id = "fav5";
     imgFive.addEventListener("click", selectFavFive, "false");
 
     var favNewlin = document.getElementById("favNewline");
     favlist.insertBefore(imgOne, favNewlin);
-    favlist.insertBefore(imTwo, favNewlin);
+    favlist.insertBefore(imgTwo, favNewlin);
     favlist.insertBefore(imgThree, favNewlin);
     favlist.insertBefore(imgFour, favNewlin);
     favlist.insertBefore(imgFive, favNewlin);
@@ -57,7 +42,7 @@ function imgNodes () {
 function addFavorite(){
 	if (favCounter < 6) {
 		var favNum = "fav" + favCounter; 
-		document.getElementById(favNum).src = "images/IMG_0" + photoOrder[2] + "sm.jpg";
+		document.getElementById(favNum).src = "../assets/IMG_0" + photoOrder[2] + "sm.jpg";
 		document.getElementById(favNum).hidden = "";
 		favCounter++;           
 	} else {
@@ -140,13 +125,13 @@ function populateFigures() {
     var currentFig;
     if (figureCount === 3) {
         for (var i = 1; i < 4; i++) {
-            filename = "images/IMG_0" + photoOrder[i] + "sm.jpg";
+            filename = "../assets/IMG_0" + photoOrder[i] + "sm.jpg";
             currentFig = document.getElementsByTagName("img")[i - 1];
             currentFig.src = filename;
         }
     } else {
         for (var i = 0; i < 5; i++) {
-            filename = "images/IMG_0" + photoOrder[i] + "sm.jpg";
+            filename = "../assets/IMG_0" + photoOrder[i] + "sm.jpg";
             currentFig = document.getElementsByTagName("img")[i];
             currentFig.src = filename;
         }
@@ -221,8 +206,8 @@ function populateFigures() {
         }
    
         // add appropriate src values to two new img elements
-        document.getElementsByTagName("img")[0].src = "images/IMG_0" + photoOrder[0] + "sm.jpg";
-        document.getElementsByTagName("img")[4].src = "images/IMG_0" + photoOrder[4] + "sm.jpg";
+        document.getElementsByTagName("img")[0].src = "../assets/IMG_0" + photoOrder[0] + "sm.jpg";
+        document.getElementsByTagName("img")[4].src = "../assets/IMG_0" + photoOrder[4] + "sm.jpg";
     }
 
     /* switch to 3-image layout */
@@ -251,7 +236,7 @@ function populateFigures() {
         var winOptions = "width=960,height=600";
         winOptions += ",left=" + winLeft;
         winOptions += ",top=" + winTop;
-        var zoomWindow = window.open("zoom.htm", "zoomwin", winOptions);
+        var zoomWindow = window.open("Centennial_JS3Zoom.html", "zoomwin", winOptions);
         zoomWindow.focus();
     }
 

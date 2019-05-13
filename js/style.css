@@ -1,0 +1,197 @@
+﻿#bug {
+    z-index: 10;
+    position: absolute;
+    background: url('../assets/carbotZerg.png') no-repeat center center;
+    width: 80px;
+    height: 80px;
+}
+#progress {
+	text-align: right;
+	position: relative;
+	top: -50px;
+}
+footer {
+	text-align: right;
+}
+
+h3 { 
+    display: inline;
+}
+#mode {
+	color: #FFFFFF;
+}
+.floatR {
+	text-align: right;
+}
+.right {
+    text-align: right;
+}
+h1 {
+	text-decoration: underline;
+	padding-left: 10px;
+	text-transform: capitalize;
+	font-variant: small-caps;
+}
+ol, ul {
+    list-style: none;
+}
+
+#bodyJS1 {
+    background-image: url('../assets/gym.jpg');
+}
+bodyJS3 {
+    line-height: 1;
+    width: 960px;
+    margin: 0 auto;
+    font-family: verdana, arial, helvetica, sans-serif;
+    background: black;
+    position: relative;
+}
+#bodyJS5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+.content {
+    position: relative;
+    border-radius: 5px;
+    border-style: inherit;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    border-width: 10px;
+    margin-top: 100px;
+}
+#maindiv {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #202020;
+    width: 800px;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* main content */
+article {
+    background: white;
+    position: relative;
+}
+
+    article h2 {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: left;
+        margin: 0 0 10px 51px;
+    }
+
+#leftarrow, #rightarrow {
+    background: #696565;
+    color: white;
+    position: absolute;
+    z-index: 30;
+    text-align: center;
+    height: 135px;
+    width: 40px;
+    top: 67px;
+}
+
+article div:hover {
+    cursor: default;
+}
+
+#leftarrow {
+    left: 0;
+}
+
+#rightarrow {
+    right: 0;
+}
+
+#fiveButton {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 290px;
+    color: white;
+    text-align: center;
+}
+
+    #fiveButton p {
+        width: 20%;
+        margin: 0 auto;
+        line-height: 2em;
+        background: #696565;
+    }
+
+#leftarrow p, #rightarrow p {
+    position: relative;
+    top: 50%;
+    margin-top: -0.5em;
+}
+
+figure {
+    position: absolute;
+    -webkit-box-shadow: 10px 0px 5px rgb(50, 50, 50), -10px 0px 5px rgb(50, 50, 50);
+    -moz-box-shadow: 10px 0px 5px rgb(50, 50, 50), -10px 0px 5px rgb(50, 50, 50);
+    box-shadow: 10px 0px 5px rgb(50, 50, 50), -10px 0px 5px rgb(50, 50, 50);
+}
+
+#fig2 {
+    z-index: 10;
+    left: 13%;
+    top: 34px;
+}
+
+#fig3 {
+    z-index: 20;
+    left: 50%;
+    margin-left: -240px;
+    top: 0;
+}
+
+#fig4 {
+    z-index: 10;
+    right: 13%;
+    top: 34px;
+}
+
+/* footer */
+#JS5footer {
+    position: fixed;
+    top: 700px;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    clear: both;
+    background: black;
+    color: rgb(227,198,32);
+}
+
+#JS5footer p {
+    text-align: center;
+}
+
+#favlist {
+    position: fixed;
+    top: 450px;
+}
